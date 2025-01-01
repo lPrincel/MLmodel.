@@ -30,6 +30,6 @@ def predict_sentiment(review_text):
     prediction = model.predict(review_vec)
     return "Positive" if prediction[0] == 1 else "Negative"
 
-example_review = input("Enter you review: ")
+example_review = input("Enter your review: ")
 predicted_sentiment = predict_sentiment(example_review)
 print(f"Predicted Sentiment: {predicted_sentiment}")
